@@ -1,0 +1,4 @@
+#ifndef __SENZOR_DISTANTA_H__INCLUDED__
+#define __SENZOR_DISTANTA_H__INCLUDED__
+
+#endif

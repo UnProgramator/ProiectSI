@@ -1,0 +1,5 @@
+#include "sdistanta.h"
+#include "smiscare.h"
+#include "sfotores.h"
+#include "stempumid.h"
+#include "slumina.h"

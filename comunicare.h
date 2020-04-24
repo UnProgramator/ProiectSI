@@ -1,0 +1,4 @@
+#ifndef __MODUL_COMUNICARE_H__INCLUDED__
+#define __MODUL_COMUNICARE_H__INCLUDED__
+
+#endif
