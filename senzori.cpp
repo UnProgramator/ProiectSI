@@ -1,6 +1,7 @@
 #include "sdistanta.h"
 #include "sfotores.h"
 #include "stempumid.h"
+#include "Arduino.h"
 
 //implementarea clasei pentru distanta
 sDist::sDist(int triggerPin, int echoPin):trig{triggerPin}, echo{echoPin}{
@@ -19,11 +20,11 @@ float sDist::getDist(){ //exemplu luat de la adresa https://howtomechatronics.co
 float sDist::getSpeed(int microseconds){
   float inital=this->getDist();
   delayMicroseconds(microseconds);
-  return (this->getDist - initial)/milliseconds;
+  return (this->getDist() - initial_distance)/microseconds;
 }
 
 void sDist::initalMeasure(){this->initial_distance=this->getDist(); this->initial_time=micros();}
-float sDist::getSpeed(){return (this->getDist-this->initial_distance)/(micros()-this->initial_time);}
+float sDist::getSpeed(){return (this->getDist() -this->initial_distance)/(micros()-this->initial_time);}
 
 //implementarea clasei pentru fotorezistenta care masoara schimbarile bruste ale intensitatii luminoase
 sfotores::sfotores(const int suplyPin, const int readPin):suply{suplyPin}, inp{readPin}{
@@ -32,6 +33,10 @@ sfotores::sfotores(const int suplyPin, const int readPin):suply{suplyPin}, inp{r
   digitalWrite(suply, LOW);
 }
 
-int readState()
+int readState(){
+  
+}
 
-void startDetect()
+void startDetect(){
+  
+}

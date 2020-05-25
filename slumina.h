@@ -6,9 +6,11 @@
 //iesirea DO este iesire digitala (era fie AO fie DO la ceilalti senzori, eu am acesta care are doar iesire digitala)
 //ajustarea luminozitatii si face cu ajutorul releuleui
 
-#define daylightSensorDefine(x) const int daylightSensor = x;
+#include "Arduino.h"
+
+#define daylightSensorDefine(x) const int daylightSensor = x
 #define initDaylightSensor() pinMode(daylightSensor, INPUT)
-#define getDayState() digitalRead(daylightSensor);
+#define getDayState() digitalRead(daylightSensor)
 #define DAY LOW
 #define NIGHT HIGH
 
