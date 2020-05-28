@@ -8,5 +8,6 @@
 #define PYR(pinNo) const int pyrPin = pinNo
 #define initPYR() pinMode(pyrPin, INPUT)
 #define readPirState() digitalRead(pyrPin)
+#define MVDETECT HIGH
 
 #endif

@@ -4,13 +4,15 @@
 
 //sursa "https://github.com/adidax/dht11.git"
 //momentan folosesc ceva de pe net, o sa scriu propria biblioteca, dupa fisa
-//#include "extern/umid_temp_sensor/dht11.h"
+#include "dht11.h"
 
 #include "Arduino.h"
 
-#define createConection(pinNo) dth11 t; const int dth11Pin = pinNo
-#define saveResults() t.read(dth11Pin)
+#define STEMPUMID(pinNo) dht11 t; const int dht11Pin = pinNo
+#define saveSTUResults() t.read(dht11Pin)
 #define getTemp() t.temperature
 #define getHumidity() t.humidity
+
+#define HUMIDITY_TRESHHOLD 80
 
 #endif

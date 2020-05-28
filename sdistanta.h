@@ -9,10 +9,13 @@ class sDist{
 public:
   sDist(int triggerPin, int echoPin);
   float getDist();
+  void init();
 
   //aceasta functie este folosita pentru a masura viteza unui obiect, blocheaza arduino pentru milliseconds microsecunde
-  float getSpeed(int microseconds); 
-
+  float getSpeed(unsigned int microseconds); 
+  
+  float getDistInTime(); //returneaza distanta parscursa in 360ms
+  
   //aceste 2 functii sunt folosite pentru a masura viteza unui obiect, fara a bloca arduino pe perioada dintre esantioanele de distanta
   void initalMeasure();
   float getSpeed();
