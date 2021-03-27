@@ -4,6 +4,8 @@ Project for an arduino based sistem to automatically turn onn and off the public
 
 Project for school: Sisteme Încorporate (Integrated systems), University Politechnica of Timisoara, faculty of Computer Science and Automatization, department of Computer Science  and Information Technology, Spring 2020
 
+Project made in colaboration with [github/tuteleadan](https://github.com/tuteleadan)
+
 For components, see commentary in files
 
 # License
